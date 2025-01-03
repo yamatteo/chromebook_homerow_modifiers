@@ -1,0 +1,23 @@
+{
+  "name": "Homerow",
+  "version": "1.0",
+  "manifest_version": 3,
+  "description": "Homerow modifiers for the chromebook. Ctrl, Shift and Alt are placed under the index, middle and ring finger in the home row. When tapped, the relative keys normally emit a character; when hold down, they work as modifiers for other tapped keys.",
+  "background": {
+    "service_worker": "colemak_hr.js"
+  },
+  "permissions": [
+    "input"
+  ],
+  "input_components": [
+    {
+      "name": "Homerow",
+      "type": "ime",
+      "id": "homerow-modifiers",
+      "description": "Homerow modifiers for the chromebook.",
+      "language": "en-US",
+      "layouts": ["us"]
+    }
+  ]
+}
+
